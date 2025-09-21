@@ -5,7 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Table;
-import java.util.Scanner;
 import java.util.ArrayList;
 import com.fasterxml.jackson.annotation.JsonProperty;
 @Entity

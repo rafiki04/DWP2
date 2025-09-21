@@ -1,4 +1,5 @@
 package com.product.api.controller;
+import org.springframework.http.ResponseEntity;
 import com.product.api.entity.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,7 @@ public class CtrlProduct{
 
 
 @GetMapping("/category")
-public List<Category> Categoria(){
+public ResponseEntity<List<Category>> Categoria(){
    List<Category> categorias = new ArrayList<>();
 
         categorias.add(new Category(1, "Lentes", "Lts", 1));
