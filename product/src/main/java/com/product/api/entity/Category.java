@@ -24,6 +24,7 @@ public class Category {
 	@JsonProperty("status")
 	@Column(name = "status")
     int status;
+	
 	 public Category() {
 		 
 	 } 
@@ -41,17 +42,32 @@ public class Category {
     public int getId() {
         return id;
     }
+    
+    public void setId(int id) {
+    	this.id = id;
+    }
 
     public String getName() {
         return nombre;
     }
 
-    public String gettag() {
+    public void setName(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTag() {
         return tag;
+    }
+    
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 
     public int getStatus() {
         return status;
+    }
+    public void setStatus(int status) {
+        this.status = status;
     }
 
 }
