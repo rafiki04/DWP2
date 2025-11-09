@@ -12,12 +12,18 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+
 import java.util.List;
 import com.product.api.dto.DtoCategoryIn;
 import com.product.api.commons_dto.ApiResponse;
 import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/category")
+@Tag(name = "Categorías", description = "Operaciones relacionadas con categorías de productos")
 public class CtrlCategory{
 
     @Autowired

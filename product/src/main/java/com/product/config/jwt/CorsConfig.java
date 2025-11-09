@@ -1,4 +1,4 @@
-/*package com.product.config.jwt;
+package com.product.config.jwt;
 
 import java.util.Arrays;
 
@@ -24,4 +24,4 @@ public class CorsConfig implements CorsConfigurationSource {
 		
 	}
 
-}*/
+}

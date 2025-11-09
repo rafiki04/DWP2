@@ -1,4 +1,4 @@
-/*package com.product.config.security;
+package com.product.config.security;
 import com.product.config.jwt.JwtAuthFilter;
 import com.product.config.jwt.CorsConfig;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,4 +41,4 @@ public class SecurityConfig {
 			
 		return http.build();
 	}
-}*/
+}

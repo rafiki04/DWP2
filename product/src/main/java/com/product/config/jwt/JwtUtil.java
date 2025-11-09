@@ -1,4 +1,4 @@
-/*package com.product.config.jwt;
+package com.product.config.jwt;
 
 import java.util.Base64;
 import java.util.Date;
@@ -52,4 +52,4 @@ public class JwtUtil {
     private <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
         return claimsResolver.apply(extractClaims(token));
     }
-}*/
+}

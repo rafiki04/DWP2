@@ -36,6 +36,9 @@ import com.product.api.repository.RepoProductImage;
 import com.product.api.service.SvcProduct;
 import com.product.api.service.SvcProductImageImp;
 import com.product.exception.ApiException;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.product.api.commons_dto.ApiResponse;
 
 
@@ -43,6 +46,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/product")
+@Tag(name = "Productos", description = "Operaciones relacionadas con productos")
 public class CtrlProduct {
 
 	@Autowired 
@@ -89,6 +93,7 @@ public class CtrlProduct {
 	
 	
 	@GetMapping
+	@Tag(name = "Imágenes de Productos", description = "Operaciones relacionadas con imágenes de productos")
 	public ResponseEntity<List<DtoProductListOut>> getProducts() {
 		return svc.getProducts();
 	}

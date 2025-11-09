@@ -1,4 +1,4 @@
-/*package com.product.config.jwt;
+package com.product.config.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -58,4 +58,4 @@ public class JwtAuthFilter extends OncePerRequestFilter{
 
         chain.doFilter(request, response);
     }
-}*/
+}
